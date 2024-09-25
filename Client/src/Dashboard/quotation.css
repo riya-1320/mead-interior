@@ -1,0 +1,64 @@
+.qh-home-container {
+    padding: 20px;
+    background-color: #ffffff; /* Changed to white for a cleaner look */
+  }
+  
+  .qh-home-title {
+    text-align: center;
+    color: #FF1B47; /* Changed title color */
+  }
+  
+  .qh-table-container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  .qh-quotation-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f2f2f2; /* Changed to light gray for better contrast */
+    color: #333333; /* Changed text color for better readability */
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .qh-quotation-table th,
+  .qh-quotation-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Lighter border color for subtlety */
+  }
+  
+  .qh-quotation-table th {
+    background-color: #FF1B47; /* Header background color */
+    color: white; /* Header text color */
+  }
+  
+  /* .qh-quotation-row:hover {
+    background-color: rgba(255, 27, 71, 0.1); /* Light hover effect matching main color} */
+ 
+  
+  .qh-item {
+    padding: 3px 0;
+  }
+  
+  .qh-view-button {
+    background-color: #333333; /* Button background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .qh-view-button:hover {
+    background-color: #333333; /* Darker color on hover */
+  }
+  
+  .qh-no-quotations {
+    text-align: center;
+    font-size: 18px;
+    color: #333333; /* Consistent text color */
+  }
+  

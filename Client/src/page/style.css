@@ -1,0 +1,305 @@
+/* Basic Styles for Consistency */
+body {
+    font-family: 'Poppins', sans-serif;
+   
+    color: #333333; /* Neutral Text */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 20px auto;
+    padding: 40px;
+    background: rgb(255,27,71);
+    background: linear-gradient(280deg, rgba(255,27,71,1) 12%, rgba(255,255,255,1) 12%, rgba(255,255,255,1) 42%);
+    
+    /* background-color: #fff; */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #FF1B47; /* Dark Primary */
+}
+.header img{
+    width: 200px;
+    /* height: 100px; */
+}
+
+/* Form Section Titles */
+.section h3 {
+    font-size: 24px;
+    color: #000000; /* Accent Color 2 */
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #FF1B47; /* Primary Color */
+}
+.h4{
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #FF1B47;
+}
+.section-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ gap: 20px;
+}
+
+/* Layout for Each Row */
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.colitem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0; /* Remove gap to make label touch input */
+    justify-content: space-between;
+    background-color: #FF1B47; /* Primary Color */
+
+    margin-bottom: 1rem;
+    color: #fff;
+    width: 100%;
+    max-width: 400px; /* Adjust the max width */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Ensures label/input boundary is seamless */
+}
+
+.colitem label {
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #FF1B47; /* Dark Primary */
+    border-radius: 8px 0 0 8px;
+    padding: 12px; /* Add padding for better touch area */
+    color: #fff;
+    
+}
+
+.unitSelect {
+    padding: 12px;
+    font-size: 16px;
+    border: none; /* Remove border */
+    background: none;
+    border-radius: 0; /* Remove border radius */
+    outline: none; /* Remove outline */
+    color: #fff;
+    background-color: #34495e; /* Dark neutral color for input */
+    flex: 1; /* Ensures the input takes up remaining space */
+}
+
+.unitSelect:focus {
+    box-shadow: none; /* Disable focus shadow */
+}
+
+.unitSelect::placeholder {
+    color: #aaa;
+}
+
+ 
+
+/* Form Column Styling */
+.col {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.col label {
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #FF1B47;
+}
+
+.col input {
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #f7f9fc;
+    transition: all 0.3s ease;
+}
+
+.col input:focus {
+    outline: none;
+    border-color: #FF1B47; /* Primary Color */
+    background-color: #fff;
+}
+select{
+    width: 250px; 
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #f7f9fc;
+    transition: all 0.3s ease;
+}
+ 
+  
+/* Component Section Styling */
+.component-section {
+    background-color: #f9f4f5; /* Light Primary Color */
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+.unit-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Component Row */
+.component-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #F7F9FB; /* Neutral Background */
+    border-radius: 8px;
+    border: 1px solid #e0e4e8;
+}
+.bo-row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #F7F9FB; /* Neutral Background */
+    border-radius: 8px;
+    border: 1px solid #e0e4e8;
+}
+.rate-component-row{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #F7F9FB; /* Neutral Background */
+    border-radius: 8px;
+    border: 1px solid #e0e4e8;
+}
+/* Button Group */
+.button-group {
+    grid-column: 5 / 4;
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-end;
+    align-items: flex-end;
+  
+}
+.rate-button-group{
+    grid-column: 5 / 6;
+    display: flex;
+    flex-direction: row;
+    align-items:  end;
+    justify-content: flex-end;
+}
+
+.add-button,
+.add-component-button,
+.remove-component-button,.add-bo-row-button {
+    background-color: #34495e; /* Primary Color */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+ 
+.add-component-button,
+.remove-component-button,.add-bo-row-button,.remove-bo-row-button {
+width: 30%;
+
+}
+.add-button:hover,
+.add-component-button:hover {
+    background-color: #34495e; /* Dark Primary */
+}
+.remove-button{
+    background-color: #FF1B47; /* Primary Color */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-component-button,.remove-bo-row-butto {
+    background-color: #FF1B47;
+}
+
+.remove-component-button:hover {
+    background-color: #c0392b;
+}
+.add-section-button,.export-rate-button{
+    background-color: #34495e; /* Primary Color */
+}
+.export-rate-button{
+    margin-top: 20px;
+}
+button {
+    background-color: #FF1B47;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+#nextButton {
+    background-color: #FF1B47; /* Primary Color */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#nextButton:hover {
+    background-color: #B31230; /* Dark Primary */
+}
+hr{
+    margin: 40px 0;
+}
+.buttongrp{
+    margin-top: 20px; 
+  }
+/* Responsive Design */
+@media (max-width: 768px) {
+    .col {
+        flex: 1 1 100%;
+    }
+    .component-row {
+        grid-template-columns: 1fr;
+    }
+    .rate-component-row{
+       display: flex;
+    }
+}

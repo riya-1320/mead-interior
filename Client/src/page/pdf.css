@@ -1,0 +1,283 @@
+body {
+  font-family: sans-serif;
+ 
+}
+.quotationpdf{
+  padding: 20mm;
+  /* padding: 20px; */
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10mm;
+}
+
+section img {
+  width: 200px;
+}
+
+main {
+  /* width: 210mm; */
+  margin: 0 auto;
+  border: 2px solid black;
+  /* page-break-inside: avoid; Avoid breaking inside elements */
+  margin-bottom: 20px; /* Space at the bottom of each page */
+  padding-bottom: 10mm; /* Padding at the bottom */
+}
+ 
+.top-header {
+  font-size: 16px;
+  margin-top: 0;
+  text-align: center;
+  border-top: 4px solid #FF1B47;
+  border-bottom: 4px solid #888686;
+  padding: 8px 0;
+}
+
+.client-details-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 10mm; /* Add space below the client details */
+}
+
+.client-details, .quotation-details {
+  border: 2px solid black;
+  margin-bottom: 5mm; /* Space between details */
+}
+
+.client-details th, .quotation-details th {
+  text-align: center;
+  background: none;
+  font-size: 14px;
+}
+
+.client-details td, .quotation-details td {
+  font-size: 12px;
+}
+
+.subject {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30mm; /* Reduced padding for better fit */
+  font-size: 12px;
+}
+
+.subject p {
+  text-align: left;
+}
+
+.subject-description {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 5mm; /* Ensure spacing after tables */
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+  border: 1px solid black;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Description Table */
+.description-table th {
+  background-color: #FF1B47;
+  color: #fff;
+}
+
+.description-table td strong {
+  font-weight: bold;
+}
+
+/* Item Description Styling */
+.item-description {
+  text-align: left;
+  padding: 15px;
+  font-size: 14px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  /* border: 1px solid #ddd; */
+  margin-bottom: 15px;
+}
+
+/* Item Name Styling */
+.item-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Component Section Styling */
+.component-section {
+  margin-bottom: 10px;
+  padding-left: 15px;
+  /* border-left: 4px solid #FF1B47; */
+  background: transparent;
+}
+
+.component-item {
+  margin-bottom: 10px;
+}
+
+.component-unit {
+  font-weight: bold;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Material List Styling */
+.material-list {
+  list-style-type: disc;
+  margin-left: -20px;
+  font-size: 13px;
+  color: #666;
+}
+
+.material-list li {
+  margin-bottom: 4px;
+}
+
+.material-list li::marker {
+  /* color: #FF1B47; Custom marker color */
+}
+
+/* B/O Section Styling */
+.bo-section {
+  margin-top: 15px;
+  padding-left: 15px;
+  /* border-left: 4px solid #1B72FF; */
+  background: transparent;
+}
+.pdf-item-name,
+.bo-title {
+  font-size: 18px;
+  font-weight: bold;
+  /* color: #1B72FF; */
+}
+
+.bo-item {
+  margin-bottom: 10px;
+}
+
+.bo-details {
+  font-weight: bold;
+  font-size: 14px;
+  color: #555;
+}
+
+
+.amount {
+  background-color: rgb(219, 178, 169);
+}
+
+.exclusions {
+  text-align: center;
+  font-size: 14px;
+}
+
+.terms-conditions-header {
+  background-color: rgb(251, 144, 147);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 5px 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  /* page-break-inside: avoid; */
+}
+
+.tandc td {
+  text-align: left;
+  font-size: 14px;
+  padding: 5px 10px; /* Padding for better readability */
+}
+
+.tandc-footer-head {
+  background: none;
+}
+
+.tandc-footer-bottom {
+  height: 100px; /* Adjusted height for consistency */
+}
+
+/* Ensure that sections are not split awkwardly */
+h3, p , td,tr {
+  page-break-after: avoid;
+  page-break-inside: avoid;
+  orphans: 2;
+  widows: 2;
+}
+
+/* Page breaks */
+.table-footer,
+.terms-conditions {
+  /* page-break-inside: avoid; Prevent splitting inside this section */
+}
+
+tr, td, th {
+  /* page-break-inside: avoid; Only prevent break inside table rows */
+}
+li{
+  page-break-inside: avoid;
+}
+.page-content {
+  margin-bottom: 20px; /* Space at the bottom of page */
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjust table responsiveness */
+  .client-details-table {
+    flex-direction: column;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  .description-head {
+    margin: 0 20px;
+  }
+
+  .subject {
+    padding: 0 10mm; /* Adjust padding for smaller screens */
+  }
+
+  .item-description {
+    width: auto; /* Adjust width for smaller screens */
+  }
+}
+/* @media print {
+  header, footer {
+    display: block;
+    position: fixed;
+    width: 100%;
+  }
+
+  header {
+    top: 0;
+  }
+
+  footer {
+    bottom: 0;
+  }
+
+  .page-break {
+    page-break-before: always;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+} */

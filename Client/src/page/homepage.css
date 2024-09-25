@@ -1,0 +1,96 @@
+.home-container {
+    padding: 20px;
+  }
+  
+  .home-header img {
+    max-width: 100%;
+  }
+  
+  .client-details h3 {
+    font-size: 1.5em;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .form-item {
+    flex: 1;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .material-select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .components-section {
+    margin-top: 20px;
+  }
+  
+  .material-row {
+    margin-bottom: 10px;
+  }
+  
+  .row-item {
+    margin-bottom: 10px;
+  }
+  
+  .remove-row-btn,
+  .add-row-btn,
+  .remove-component-btn,
+  .add-component-btn,
+  .submit-btn {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .remove-row-btn {
+    background-color: #f8d7da;
+  }
+  
+  .add-row-btn {
+    background-color: #d4edda;
+  }
+  
+  .remove-component-btn {
+    background-color: #f8d7da;
+  }
+  
+  .add-component-btn {
+    background-color: #d4edda;
+  }
+  
+  .submit-btn {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .error-message {
+    color: #dc3545;
+  }
+  
+  .success-message {
+    color: #28a745;
+  }
+  .buttongrp{
+    margin-top: 40px;
+    background-color: #007bff;
+  }
+  .fixed-width {
+    width: 200px; /* Set a fixed width */
+    /* You can also use percentages, e.g., width: 100%; to fit its container */
+    /* Optional: Add min-width and max-width if needed */
+    min-width: 150px; /* Minimum width */
+    max-width: 100px; /* Maximum width */
+  }
+  

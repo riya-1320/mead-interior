@@ -1,0 +1,22 @@
+/* General dashboard layout styles */
+.dashboard-container {
+    display: flex; /* Flex layout for sidebar and content */
+    /* height: 100vh; Full height of the viewport */
+  }
+  
+  .content {
+    flex-grow: 1; /* Content takes remaining space */
+   
+  }
+  
+  /* Hide sidebar on small screens by default */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      flex-direction: column; /* Stack sidebar and content vertically */
+    }
+  
+    .content {
+      margin-left: 0; /* Remove margin */
+    }
+  }
+  

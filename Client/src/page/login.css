@@ -1,0 +1,129 @@
+/* Login Container Styles */
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  background: linear-gradient(125deg, #ffffff 10%, #FF1B47); /* Gradient background */
+}
+
+/* Card Container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* padding: 100px; Padding around the card */
+}
+.logo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.login-card {
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  backdrop-filter: blur(5px); /* Glass effect */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  padding: 50px;
+  width: 500px;
+}
+.login-card img{
+  width: 30%;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #fff; /* Adjusted for better visibility */
+}
+
+/* Tab Navigation */
+.tab-navigation {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 10px;
+  cursor: pointer;
+  background: transparent; /* Transparent background for buttons */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Border for buttons */
+  color: #fff; /* Text color */
+  font-size: 16px;
+  transition: background 0.3s, color 0.3s; /* Smooth transition for hover */
+}
+
+.tab-button.active {
+  background: rgba(255, 255, 255, 0.3); /* Active tab color */
+  color: #FF1B47; /* Change text color for active tab */
+}
+
+/* Form Styles */
+.login-form {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.form-group {
+  margin-bottom: 15px;
+  margin-right: 20px;
+}
+
+.loginlabel {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #fff; /* Adjusted for better visibility */
+}
+
+input[type='email'],
+input[type='password'] {
+  width: 95%;
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Light border for input */
+  border-radius: 4px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.1); /* Transparent background for input */
+  color: #fff; /* Text color */
+}
+
+.error-msg {
+  color: red;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+/* Button Styles */
+.login-button-div{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.login-button {
+  width: 30%;
+  padding: 10px;
+  border: none;
+  background: #FF1B47;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s; /* Smooth transition */
+}
+
+.login-button:hover {
+  background: #ff4b68;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .login-card {
+    width: 90%;
+  }
+}

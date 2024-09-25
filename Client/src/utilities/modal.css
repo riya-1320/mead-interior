@@ -1,0 +1,117 @@
+/* modal.css */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensures the modal is above other content */
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px; /* Increased max-width for larger screens */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for better visibility */
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px; /* Increased spacing for clarity */
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="number"] {
+  width: calc(100% - 16px); /* Adjusted for padding */
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.option-group {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.option-group input {
+  margin-bottom: 8px; /* Spacing between inputs */
+}
+
+.option-group button {
+  align-self: flex-end;
+  background-color: #FF1B47;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.option-addrow{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.option-group button:hover {
+  background-color: #c0392b;
+}
+
+.rateMaterialsubmit{
+  width: 20%;
+  background-color: #34495e;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.rateMaterialsubmit:hover {
+  background-color: #34495e;
+}
+
+.rateMaterialclose {
+  width: 20%;
+  background-color: #FF1B47;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.rateMaterialclose:hover {
+  background-color: #f60938;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    max-width: none; /* Allows modal to take full width on smaller screens */
+  }
+}
